@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content-header">
+        <h1>
+            影像描述生成
+{#            <small>Optional</small>#}
+        </h1>
+{#        <ol class="breadcrumb">#}
+{#            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>#}
+{#            <li class="active">Main Page</li>#}
+{#        </ol>#}
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- general form elements -->
+        <div class="box box-default">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">输入影像文件</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="img2Text.html" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="box-body">
+
+                    <div class="form-group">
+
+                        <div class="col-md-9">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" name="img"/>
+                            <p class="help-block">输出图像、图像描述及原始文本.</p>
+                        </div>
+                        <div class="col-md-4">
+                            {% if img %}
+                                <img src="{{ img }}" height="224" width="224"/>
+                            {% endif %}
+{#                            <img src="/media/img/20586908.jpeg" height="200" width="200"/>#}
+                        </div>
+                        <div class="col-md-4">
+                            {% if original_text %}
+                                <p>{{ original_text }}</p>
+                            {% endif %}
+{#                            <p>发现 微钙化 <br>#}
+{#                                未 发现 结节 和 微钙化 影像 表现 正常<br>#}
+{#                                乳腺 组织 内有 散 在 的 纤维腺体 发现 微钙化 </p>#}
+                        </div>
+                        <div class="col-md-4">
+                            {% for content in text %}
+                                <p>{{ content }}</p>
+                            {% endfor %}
+{#                            <p>未发现结节和微钙化，影像表现正常</p>#}
+                        </div>
+
+                        <div class="col-md-9">
+                            <p class="help-block">输出分类预测结果.</p>
+                            {% if classify %}
+                                <p>{{ classify }}</p>
+                            {% endif %}
+{#                            <p>BI-Rads 1</p>#}
+                        </div>
+
+                        <div class="col-md-9">
+                            <p class="help-block">输出标签.</p>
+                            {% for label in labels %}
+                                {{ label }}
+                            {% endfor %}
+{#                            <p>BI-Rads 1</p>#}
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">上传</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- /.box -->
+
+    </section>
+
+{% endblock %}

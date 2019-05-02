@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content-header">
+        <h1>
+            影像聚类分割
+{#            <small>Optional</small>#}
+        </h1>
+{#        <ol class="breadcrumb">#}
+{#            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>#}
+{#            <li class="active">Main Page</li>#}
+{#        </ol>#}
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- general form elements -->
+        <div class="box box-default">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">输入影像文件</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="imgClusterSeg.html" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="box-body">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" name="img"/>
+
+                        <p class="help-block">输出原始图像增强图像以及分割结果.</p>
+                        {% for img in imgs%}
+                            <img src="{{ img }}" height="200" width="200"/>
+                        {% endfor %}
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">上传</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- /.box -->
+
+    </section>
+
+{% endblock %}
