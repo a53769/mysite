@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 from tensorflow.contrib.rnn import DropoutWrapper
-from cmdb.algorithm_breast.utils import *
+from cmdb.algorithm.utils import *
 
 
-BATCH_SIZE = config.FLAGS.batch_size
 unit_num = embeddings_size         # 默认词向量的大小等于RNN(每个time step) 和 CNN(列) 中神经单元的个数, 为了避免混淆model中全部用unit_num表示。
 time_step = max_sequence      # 每个句子的最大长度和time_step一样,为了避免混淆model中全部用time_step表示。
 DROPOUT_RATE = config.FLAGS.dropout
-EPOCH = config.FLAGS.epoch
 TAGS_NUM = get_class_size()
 
 
@@ -104,27 +102,22 @@ def predict(net, tag_table, sess):
         yield list(tags)
 
 
-def textTaggingMain():
-    action = config.FLAGS.action
-    # 获取词的总数。
-    vocab_size = get_src_vocab_size()
-    src_unknown_id = tgt_unknown_id = vocab_size
-    src_padding = vocab_size + 1
-
-    src_vocab_table, tgt_vocab_table = create_vocab_tables(src_vocab_file, tgt_vocab_file, src_unknown_id, tgt_unknown_id)
-    embedding = load_word2vec_embedding(vocab_size)
+def textTag():
 
     BATCH_SIZE = 1
-    DROPOUT_RATE = 1.0
+    vocab_size = get_src_vocab_size()
+    src_unknown_id = tgt_unknown_id = vocab_size
+    src_vocab_table, tgt_vocab_table = create_vocab_tables(src_vocab_file, tgt_vocab_file, src_unknown_id, tgt_unknown_id)
+    embedding = load_word2vec_embedding(vocab_size)
+    tag_table = tag_to_id_table()
     iterator = get_predict_iterator(src_vocab_table, vocab_size, BATCH_SIZE)
 
-    tag_table = tag_to_id_table()
     net = NER_net("ner", iterator, embedding, BATCH_SIZE)
+
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         sess.run(iterator.initializer)
         tf.tables_initializer().run()
-
         data = predict(net, tag_table, sess)
         data = list(data)
     return data

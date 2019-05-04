@@ -1,36 +1,12 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
 # Create your views here.
-from cmdb.algorithm_breast.Cluster import getImage
+from cmdb.algorithm.Cluster import getImage
 from cmdb.models import Img,Txt
-from cmdb.algorithm_breast.Caption import generate
-import pandas as pd
+from cmdb.algorithm.Caption import generate
 import os
-import cmdb.algorithm_breast.TxtProcess as TP
-
-# def index(request):
-#     # return HttpResponse("Hello World!")
-#     if request.method == "POST":
-#         # username = request.POST.get("username", None)
-#         # password = request.POST.get("password", None)
-#         # temp = {"user": username, "pwd": password}
-#         # user_list.append(temp)
-#         file_obj = request.FILES.get('img', None)
-#
-#         if file_obj == None:
-#             return HttpResponse('file not existing in the request')
-#         img = Img(img_url=request.FILES.get('img'), name=request.FILES.get('img').name)
-#         img.save()
-#         # print(img.img_url.path)
-#         images = getImage(img.img_url.path, img.img_url.url)
-#
-#         content = {
-#             # "data":user_list,
-#             "imgs": images
-#         }
-#         return render(request, "start.html", content)
-#
-#     return render(request, 'start.html', )
+from cmdb.algorithm.config import *
+import cmdb.algorithm.TxtProcess as TP
 
 
 def home(request):
@@ -79,7 +55,7 @@ def textTag(request):
         seqs_file.save()
 
         org_file = seqs_file.txt_url.path
-        seg_file = r"./media/resource_breastTxt/predict_seg.txt"
+        seg_file = os.path.join(outputPath, "predict_seg.txt")
 
         # 获取原始文本序列以及分词后的序列
         seqs_org, seqs_seg = TP.get_TextSeg(org_file)
@@ -140,21 +116,15 @@ def img2Text(request):
 
 def imgClusterSeg(request):
     if request.method == "POST":
-        # username = request.POST.get("username", None)
-        # password = request.POST.get("password", None)
-        # temp = {"user": username, "pwd": password}
-        # user_list.append(temp)
         file_obj = request.FILES.get('img', None)
-
         if file_obj == None:
             return HttpResponse('file not existing in the request')
         img = Img(img_url=request.FILES.get('img'), name=request.FILES.get('img').name)
         img.save()
-        # print(img.img_url.path)
-        images = getImage(img.img_url.path, img.img_url.url)
+
+        images = getImage(img.img_url.path, img.name, img.img_url.url)
 
         content = {
-            # "data":user_list,
             "imgs": images
         }
         return render(request, "imgClusterSeg.html", content)

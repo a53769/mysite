@@ -3,7 +3,7 @@ from torch import nn
 import torchvision as tv
 from torch.nn.utils.rnn import pack_padded_sequence
 import time
-from cmdb.algorithm_breast.beam_search import CaptionGenerator
+from cmdb.algorithm.beam_search import CaptionGenerator
 
 
 class CaptionModel(nn.Module):

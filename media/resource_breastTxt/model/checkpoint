@@ -1,6 +1,0 @@
-model_checkpoint_path: "points-1000"
-all_model_checkpoint_paths: "points-600"
-all_model_checkpoint_paths: "points-700"
-all_model_checkpoint_paths: "points-800"
-all_model_checkpoint_paths: "points-900"
-all_model_checkpoint_paths: "points-1000"

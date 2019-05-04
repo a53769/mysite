@@ -143,22 +143,24 @@ def get_rect(max_regions, aug, param):
 def AugImge(img):
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     img_array = clahe.apply(img)
-
     return img_array
 
 
-def getImage(path, url):
-    imgs = []
-    img = cv2.imread(path,0)
-    cv2.imwrite(path[0:-3]+'jpg', img)
-    imgs.append(url[0:-3]+'jpg')
-    aug = AugImge(img)
-    cv2.imwrite(path[0:-4] + '_aug.jpg', aug)
-    imgs.append(url[0:-4]+'_aug.jpg')
-    max_regions = get_max_intensity(get_cluster_area(get_feature(get_ROI(get_mask(aug), aug))), aug)
-    get_mass(max_regions, aug, path[0:-4] + '_mass.jpg')
-    imgs.append(url[0:-4] + '_mass.jpg')
-    get_rect(max_regions, aug, path[0:-4] + '_rect.jpg')
-    imgs.append(url[0:-4] + '_rect.jpg')
+def getImage(path, name, url):
+    img = cv2.imread(path, 0)
 
+    outputPath = r'./media/output/breastOutput/' + name
+    outputUrl = r'/media/output/breastOutput/' + name
+    imgs = []
+
+    cv2.imwrite(outputPath[0:-3]+'jpg', img)
+    imgs.append(outputUrl[0:-3]+'jpg')
+    aug = AugImge(img)
+    cv2.imwrite(outputPath[0:-4] + '_aug.jpg', aug)
+    imgs.append(outputUrl[0:-4]+'_aug.jpg')
+    max_regions = get_max_intensity(get_cluster_area(get_feature(get_ROI(get_mask(aug), aug))), aug)
+    get_mass(max_regions, aug, outputPath[0:-4] + '_mass.jpg')
+    imgs.append(outputUrl[0:-4] + '_mass.jpg')
+    get_rect(max_regions, aug, outputPath[0:-4] + '_rect.jpg')
+    imgs.append(outputUrl[0:-4] + '_rect.jpg')
     return imgs
