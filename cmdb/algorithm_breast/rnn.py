@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from tensorflow.contrib.rnn import DropoutWrapper
-from cmdb.algorithm.utils import *
+from cmdb.algorithm_breast.utils import *
 
 
 BATCH_SIZE = config.FLAGS.batch_size
@@ -70,7 +70,7 @@ class NER_net:
         self.train_op = tf.train.AdamOptimizer().minimize(self.loss)
 
 
-def predict(net, tag_table, sess, pred_path):
+def predict(net, tag_table, sess):
     saver = tf.train.Saver()
     ckpt = tf.train.get_checkpoint_state(model_path)
     if ckpt is not None:
@@ -104,7 +104,7 @@ def predict(net, tag_table, sess, pred_path):
         yield list(tags)
 
 
-def textTaggingMain(path):
+def textTaggingMain():
     action = config.FLAGS.action
     # 获取词的总数。
     vocab_size = get_src_vocab_size()
@@ -125,7 +125,7 @@ def textTaggingMain(path):
         sess.run(iterator.initializer)
         tf.tables_initializer().run()
 
-        data = predict(net, tag_table, sess, path)
+        data = predict(net, tag_table, sess)
         data = list(data)
     return data
 

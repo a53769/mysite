@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.python.ops import lookup_ops
 import numpy as np
 import collections
-import cmdb.algorithm.config as config
+import cmdb.algorithm_breast.config as config
 import os
 
 src_file = config.FLAGS.src_file

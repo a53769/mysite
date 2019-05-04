@@ -1,6 +1,6 @@
 import torch as t
 import torchvision as tv
-from cmdb.algorithm.Models import CaptionModel
+from cmdb.algorithm_breast.Models import CaptionModel
 from PIL import Image
 import pandas as pd
 import numpy as np

@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
 # Create your views here.
-from cmdb.algorithm.Cluster import getImage
-from cmdb.models import Img
-from cmdb.algorithm.Caption import generate
+from cmdb.algorithm_breast.Cluster import getImage
+from cmdb.models import Img,Txt
+from cmdb.algorithm_breast.Caption import generate
 import pandas as pd
-
+import os
+import cmdb.algorithm_breast.TxtProcess as TP
 
 # def index(request):
 #     # return HttpResponse("Hello World!")
@@ -36,8 +37,80 @@ def home(request):
     return render(request, 'home.html', )
 
 
-def textTagging(request):
-    return render(request, 'textTagging.html', )
+def textSeg(request):
+    if request.method == "POST":
+
+        file_obj = request.FILES.get('txt', None)
+
+        if file_obj == None:
+            return HttpResponse('file not existing in the request')
+
+        filename = request.FILES.get('txt').name
+        seqs_file = Txt(txt_url=request.FILES.get('txt'), name=filename)
+        seqs_file.save()
+        seg_file = seqs_file.txt_url.path
+
+        # 获取原始文本序列以及分词后的序列
+        seqs_org, seqs_seg = TP.get_TextSeg(seg_file)
+
+        # 将分词后的单词拼接成序列，以“|”隔开
+        for index, sentence in enumerate(seqs_seg):
+            seqs_seg[index] = '|'.join(sentence)
+
+        data = zip(seqs_org, seqs_seg )
+        content = {
+            # "data":user_list,
+            "data": data,
+        }
+        return render(request, 'textSeg.html', content)
+    return render(request, 'textSeg.html', )
+
+
+def textTag(request):
+    if request.method == "POST":
+
+        file_obj = request.FILES.get('txt', None)
+
+        if file_obj == None:
+            return HttpResponse('file not existing in the request')
+
+        filename = request.FILES.get('txt').name
+        seqs_file = Txt(txt_url=request.FILES.get('txt'), name=filename)
+        seqs_file.save()
+
+        org_file = seqs_file.txt_url.path
+        seg_file = r"./media/resource_breastTxt/predict_seg.txt"
+
+        # 获取原始文本序列以及分词后的序列
+        seqs_org, seqs_seg = TP.get_TextSeg(org_file)
+
+        # 将分词后的单词拼接成序列，以“ ”隔开, 并存入指定路径文件seg_file
+        TP.save_file(seg_file, seqs_seg)
+
+        # 获取标注后的序列, (待预测文件即指定路径文件seg_file，在config.py文件中修改)
+        seqs_tag = TP.get_TextTag()
+
+        # 将 seg 和 tag 序列合并为一个字符串
+        seqs_seg_tag = []
+        for seqs_index in range(len(seqs_tag)):
+            seqs_comb = []
+            for tag_index,tag in enumerate(seqs_tag[seqs_index]):
+                word = seqs_seg[seqs_index][tag_index]
+                seqs_comb.append(word + '/' + tag)
+            seqs_seg_tag.append(seqs_comb)
+
+        data = zip(seqs_org, seqs_seg, seqs_tag, seqs_seg_tag)
+
+        content = {
+            # "data":user_list,
+            "data": data,
+        }
+        return render(request, 'textTag.html', content)
+    return render(request, 'textTag.html', )
+
+
+def textStruct(request):
+    return render(request, 'textStruct.html', )
 
 
 def img2Text(request):
