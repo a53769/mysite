@@ -2,70 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c39d5ede-e7bb-4259-be90-fdc0555fd616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/models/breastModels/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmdb/algorithm/adDisease.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/models/adModels/clinical_m.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/adPredict.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/Caption.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Caption.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/Cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/TxtProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/TxtProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/beam_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/beam_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/algorithm_breast/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmdb/algorithm/Caption.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Caption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmdb/algorithm/Cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmdb/algorithm/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/algorithm/Models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmdb/link_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmdb/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/INbreast_修改.xls" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/INbreast_修改.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/caption_1124_2204" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/caption_1124_2204" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/caption_11_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/caption_11_2.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/full_classify.pth" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/full_classify.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/20586908.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001.pgm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001_9F3YN2J.pgm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001_aug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001_mass.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/mdb001_rect.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/record.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-1000.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/points-1000.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-1000.index" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/points-1000.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-1000.meta" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/points-1000.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-60.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-60.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-60.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-600.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-600.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-600.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-70.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-70.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-70.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-700.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-700.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-700.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-80.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-80.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-80.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-800.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-800.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-800.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-90.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-90.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-90.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-900.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-900.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/model/points-900.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/predict_seg.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/source_vec.vector" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/source_vec.vector" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/source_vocab.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/source_vocab.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/target_vocab.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/target_vocab.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/resource_breastTxt/usr_dics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/usr_dics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/txt/predict.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/txt/predict_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/txt/predict_1_arP93U4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/txt/predict_jVmnLav.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/models/breastModels/caption_11_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/media/resources/breastResources/caption_11_2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/resources/breastResources/caption_1124_2204" beforeDir="false" afterPath="$PROJECT_DIR$/media/models/breastModels/caption_1124_2204" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/start.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,91 +162,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="img2Text.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/img2Text.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="238">
+              <caret line="166" column="39" lean-forward="true" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <element signature="e#334#371#0" />
+                <element signature="e#400#1211#0" />
                 <element signature="e#1240#2544#0" />
                 <element signature="e#2576#2619#0" />
-                <element signature="e#2649#3429#0" />
+                <element signature="e#2649#3421#0" />
+                <element signature="e#3456#3982#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="adDisease.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/adDisease.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#24#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/imgClusterSeg.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/TxtProcess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="287">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#640#672#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/rnn.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+            <state relative-caret-position="279">
+              <caret line="263" column="84" selection-start-line="263" selection-start-column="84" selection-end-line="263" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmdb/admin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-276">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
-                <element signature="e#24#73#0" expanded="true" />
+                <element signature="e#58#81#0" expanded="true" />
+                <element signature="e#1009#2701#0" />
+                <element signature="e#2734#3012#0" />
+                <element signature="e#3041#3348#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py">
+      <file leaf-file-name="adPredict.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/adPredict.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="145" column="20" lean-forward="true" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#319#517#0" />
-                <element signature="e#578#841#0" />
-                <element signature="e#876#1982#0" />
-                <element signature="e#2023#2249#0" />
-                <element signature="e#2305#3443#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/algorithm/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="1237">
+              <caret line="170" column="45" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -297,10 +276,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/cmdb/algorithm_breast/utils.py" />
         <option value="$PROJECT_DIR$/cmdb/algorithm_breast/Models.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/media/resource_breastTxt/predict_seg.txt" />
         <option value="$PROJECT_DIR$/cmdb/algorithm_breast/config.py" />
         <option value="$PROJECT_DIR$/cmdb/algorithm_breast/rnn.py" />
@@ -310,8 +287,14 @@
         <option value="$PROJECT_DIR$/cmdb/algorithm/TxtProcess.py" />
         <option value="$PROJECT_DIR$/cmdb/algorithm/config.py" />
         <option value="$PROJECT_DIR$/cmdb/models.py" />
-        <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/cmdb/algorithm/Cluster.py" />
+        <option value="$PROJECT_DIR$/cmdb/algorithm/Caption.py" />
+        <option value="$PROJECT_DIR$/cmdb/algorithm/Models.py" />
+        <option value="$PROJECT_DIR$/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/adPredict.html" />
+        <option value="$PROJECT_DIR$/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/cmdb/algorithm/adDisease.py" />
       </list>
     </option>
   </component>
@@ -379,18 +362,20 @@
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="adModels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
@@ -404,22 +389,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media" />
-      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\resource_breastTxt" />
-      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\cmdb\algorithm_breast" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\mysite\media\resources\breastResources" />
+      <recent name="D:\workspace\mysite\media\models\breastModels" />
       <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\upload" />
       <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media" />
       <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\resources" />
-      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\resources\breastResources" />
-      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\models\breastModels" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\mysite\media\models\adModels" />
+      <recent name="D:\workspace\mysite\cmdb\algorithm" />
+      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media" />
+      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\media\resource_breastTxt" />
+      <recent name="D:\Workspace_Pycharm_pro\Web\mysiteImg\cmdb\algorithm_breast" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -453,9 +441,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="mysit" type="Python.DjangoServer" factoryName="Django server">
       <module name="mysite" />
@@ -465,21 +450,20 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="mysite.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Kiiver\Anaconda3\envs\webpy35\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Django server.mysit" />
@@ -514,57 +498,57 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.2494577" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3470716" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7223427" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32902297" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35193133" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.4635193" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38733125" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35193133" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1874311" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" weight="0.18308702" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25531915" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.24922119" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.4635193" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.2494577" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.29899856" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46209762" />
+      <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.4635193" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25531915" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.4635193" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32902297" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.29899856" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.15871254" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3546638" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.15871254" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.2494577" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,16 +587,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py</url>
-          <line>165</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py</url>
-          <line>151</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/cmdb/algorithm/Caption.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -621,13 +601,38 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/envs/webpy35/Lib/site-packages/torch/__init__.py">
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state relative-caret-position="2750">
+          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="145" column="20" lean-forward="true" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#319#517#0" />
+            <element signature="e#876#1982#0" />
+            <element signature="e#2023#2249#0" />
+            <element signature="e#2305#3443#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/webpy35/Lib/site-packages/torch/__init__.py" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -642,41 +647,8 @@
     <entry file="file://$PROJECT_DIR$/media/resources/breastResources/usr_dics.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="113" column="53" lean-forward="true" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/webpy35/Lib/site-packages/jieba/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="373" selection-start-line="373" selection-end-line="373" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/webpy35/Lib/site-packages/jieba/__init__.py" />
     <entry file="file://$PROJECT_DIR$/media/resources/breastResources/predict_seg.txt" />
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="276" column="26" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/resource_breastTxt/source.txt" />
     <entry file="file://$PROJECT_DIR$/media/resources/breastResources/source_vocab.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -691,63 +663,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_9F3YN2J.pgm">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_aug.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_mass.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_rect.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1900">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#58#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_9F3YN2J.pgm" />
+    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_aug.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_mass.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/upload/img/mdb001_rect.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/textTag.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/textSeg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/img/mdb001_rect.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/img/mdb001.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/img/mdb001.pgm">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/img/mdb001_aug.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/img/mdb001_mass.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-          <folding>
-            <element signature="e#24#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/img/mdb001_rect.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/img/mdb001.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/img/mdb001.pgm" />
+    <entry file="file://$PROJECT_DIR$/media/img/mdb001_aug.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/img/mdb001_mass.jpg" />
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-400">
@@ -755,19 +682,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/img/20586908.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/upload/img/20586908.jpeg" />
     <entry file="file://$PROJECT_DIR$/cmdb/algorithm/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="125">
           <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/algorithm/TxtProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="550">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -775,51 +700,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/output/breastOutput/mdb001_aug.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/output/breastOutput/mdb001.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
+    <entry file="file://$PROJECT_DIR$/media/output/breastOutput/mdb001_aug.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/output/breastOutput/mdb001.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/imgClusterSeg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="850">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/imgClusterSeg.html">
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Caption.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="34" />
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2775">
+          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/others.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <folding>
+            <element signature="e#519#1177#0#HTML" />
+            <element signature="e#1432#2067#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/link_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#58#81#0" expanded="true" />
+            <element signature="e#1009#2701#0" />
+            <element signature="e#2734#3012#0" />
+            <element signature="e#3041#3348#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#319#517#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="263" column="84" selection-start-line="263" selection-start-column="84" selection-end-line="263" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/textSeg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/img2Text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/adPredict.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1237">
+          <caret line="170" column="45" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="238">
+          <caret line="166" column="39" lean-forward="true" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <element signature="e#334#371#0" />
+            <element signature="e#400#1211#0" />
             <element signature="e#1240#2544#0" />
             <element signature="e#2576#2619#0" />
-            <element signature="e#2649#3429#0" />
+            <element signature="e#2649#3421#0" />
+            <element signature="e#3456#3982#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/Cluster.py">
+    <entry file="file://$PROJECT_DIR$/cmdb/algorithm/adDisease.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="145" column="20" lean-forward="true" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+        <state relative-caret-position="250">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#319#517#0" />
-            <element signature="e#578#841#0" />
-            <element signature="e#876#1982#0" />
-            <element signature="e#2023#2249#0" />
-            <element signature="e#2305#3443#0" />
+            <element signature="e#24#60#0" expanded="true" />
           </folding>
         </state>
       </provider>

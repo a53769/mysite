@@ -9,7 +9,7 @@ IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
 
 class Config:
-    caption_data_path = './media/caption_11_2.pth'  # 经过预处理后的人工描述信息
+    caption_data_path = './media/resources/breastResources/caption_11_2.pth'  # 经过预处理后的人工描述信息
     img_path = './img_t//'
     # img_path='/mnt/ht/aichallenger/raw/ai_challenger_caption_train_20170902/caption_train_images_20170902/'
     img_feature_path = 'results_10_07.pth'  # 所有图片的features,20w*2048的向量
@@ -29,7 +29,7 @@ class Config:
     plot_every = 10
     debug_file = '/tmp/debugc'
 
-    model_ckpt = './media/caption_1124_2204'  # 模型断点保存路径
+    model_ckpt = './media/models/breastModels/caption_1124_2204'  # 模型断点保存路径
     lr = 1e-3
     use_gpu = True
     epoch = 1000
@@ -41,10 +41,8 @@ def generate(image_path,name):
     # 数据预处理
     data = t.load(opt.caption_data_path, map_location=lambda s, l: s)
     word2ix, ix2word, id2ix = data['word2ix'], data['ix2word'], data['id2ix']
-
-    name = name[4:]
     id = id2ix[name]
-    data = pd.read_excel('./media/INbreast_修改.xls')
+    data = pd.read_excel('./media/resources/breastResources/INbreast_修改.xls')
     row = data.iloc[id]
     classify = row['Bi-Rads']
     caption = row['caption']

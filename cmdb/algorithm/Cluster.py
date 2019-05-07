@@ -23,7 +23,7 @@ def get_mask(Image):
     return bw
 
 
-def get_ROI(pre: ndarray, image: ndarray) -> ndarray:
+def get_ROI(pre, image):
     roi_image = np.zeros((IN_R, IN_C))
     for i in range(IN_R):
         for j in range(IN_C):

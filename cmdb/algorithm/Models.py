@@ -16,7 +16,7 @@ class CaptionModel(nn.Module):
         # del resnet50.fc
         # resnet50.fc = lambda x: x
         # resnet50.cuda()
-        model = t.load('./media/full_classify.pth')
+        model = t.load('./media/models/breastModels/full_classify.pth')
         del model.fc
         model.fc = lambda x: x
         model.cuda()

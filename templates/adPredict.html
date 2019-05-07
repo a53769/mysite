@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content-header">
+        <h1>
+            影像描述生成
+{#            <small>Optional</small>#}
+        </h1>
+{#        <ol class="breadcrumb">#}
+{#            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>#}
+{#            <li class="active">Main Page</li>#}
+{#        </ol>#}
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- general form elements -->
+        <div class="box box-default">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">选择影像文件并输入指标</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="adPredict.html" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="box-body">
+
+                    <div class="form-group">
+
+                        <div class="col-md-9">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" name="img"/>
+                            <br>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box box-primary">
+                                <h5 class="box-title">人口统计学信息</h5>
+                                <div class="box-body">
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">AGE</span>
+                                            <input type="text" class="form-control" name="AGE"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>PTGENDER</label>
+                                        <select class="form-control" name="PTGENDER">
+                                        <option>男</option>
+                                        <option>女</option>
+                                        </select>
+                                        <br>
+
+
+{#                                        <div class="input-group">#}
+{#                                            <span class="input-group-addon">PTGENDER</span>#}
+{#                                            <input type="text" class="form-control" >#}
+{#                                        </div>#}
+{#                                        <br>#}
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="box box-primary">
+                                <h5 class="box-title">生物学检测信息</h5>
+                                <div class="box-body">
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">TAU</span>
+                                            <input type="text" class="form-control" name="TAU" />
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">PTAU</span>
+                                            <input type="text" class="form-control" name="PTAU"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">ABETA40</span>
+                                            <input type="text" class="form-control" name="ABETA40" />
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">ABETA42</span>
+                                            <input type="text" class="form-control" name="ABETA42"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">APOE4</span>
+                                            <input type="text" class="form-control" name="APOE4"/>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="box box-primary">
+                                <h5 class="box-title">神经心理学评估</h5>
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">CDRSB</span>
+                                            <input type="text" class="form-control" name="CDRSB"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">MMSE</span>
+                                            <input type="text" class="form-control" name="MMSE"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">RAVLT</span>
+                                            <input type="text" class="form-control" name="RAVLT"/>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">FAQ</span>
+                                            <input type="text" class="form-control" name="FAQ"/>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-9">
+                            <p class="help-block">输出预测结果.</p>
+                            {% if disease %}
+                                <p>{{ disease }}</p>
+                            {% endif %}
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">上传</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- /.box -->
+
+    </section>
+
+{% endblock %}
