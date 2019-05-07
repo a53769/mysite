@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content-header">
+        <h1>
+            文本格式化
+{#            <small>Optional</small>#}
+        </h1>
+{#        <ol class="breadcrumb">#}
+{#            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>#}
+{#            <li class="active">Main Page</li>#}
+{#        </ol>#}
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+    <div>
+      <div class="box" style="float: left; width: 45%">
+        <div class="box-header with-border" >
+          <h3 class="box-title">原始文本</h3>
+        </div>
+        <div class="box-body">
+            <p>双侧乳腺皮肤及乳晕未见明显增厚，乳头无凹陷。皮下脂肪组织结构层次清晰。双侧腺体较丰富，呈团片状、结节状密度增高影，边缘膨隆，右乳内侧较左侧丰富。双乳散在点状、斑片状及环形钙化灶。右乳上部深部结节影，边缘光滑，大小约为1.01*0.74CM。两侧腋下淋巴结显示。</p>
+        </div>
+        <!-- /.box-body -->
+      </div>
+
+        <!-- general form elements -->
+        <div class="box" style="float: right; width: 45%">
+            <div class="box-header with-border" >
+                <h3 class="box-title">结构化结果</h3>
+            </div>
+            <div class="box-body">
+{#            <pre>#}
+    "Skin": [{
+        "Skin_ID": "1",
+        "Position": ["双侧","乳晕"],
+        "Chang": "未见明显增厚"},
+        {
+        "Skin_ID": "2",
+        "Position": "乳头",
+        "Chang": "无凹陷"
+        }],
+    "Gland": [{
+        "Gland_ID": "1",
+        "Position": "皮下脂肪",
+        "Shape": "层次清晰"},
+        {
+        "Gland_ID": "2",
+        "Position": "右乳内侧",
+        "Density": "较左侧丰富"
+        }],
+    "Shadow": [{
+        "Shadow_ID": "1",
+        "Position": "双侧",
+        "Shape": ["团片状","结节状"],
+        "Density": ["丰富","增高"],
+        "Margin": "膨隆"},
+        {
+        "Shadow_ID": "2",
+        "Position": "右乳上部深部",
+        "Shape": "结节",
+        "Margin": "光滑",
+        "Size": "1.01*0.74CM"
+        }],
+    "Calcification": [{
+        "Calcification_ID": "1",
+        "Position": "双乳",
+        "Shape": ["点状","斑片状","环形"],
+        "Distribution": "散在"}],
+    "Lymphnode": [{
+        "lymphnode_ID": "1",
+        "Position": "两侧腋下"}]
+{#            </pre>#}
+            </div>
+        </div>
+        <!-- /.box -->
+    </div>
+    </section>
+
+{% endblock %}

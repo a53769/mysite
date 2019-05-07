@@ -22,7 +22,9 @@ from cmdb import link_views
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^home/',views.home),
-    url(r'^index/textTagging.html',views.textTagging),
+    url(r'^index/textTag.html',views.textTag),
+    url(r'^index/textSeg.html',views.textSeg),
+    url(r'^index/textStruct.html',views.textStruct),
     url(r'^index/img2Text.html',views.img2Text),
     url(r'^index/imgClusterSeg.html', views.imgClusterSeg),
     url(r'^index/others.html',views.others),
