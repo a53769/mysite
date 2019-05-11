@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^index/img2Text.html',views.img2Text),
     url(r'^index/imgClusterSeg.html', views.imgClusterSeg),
     url(r'^index/adPredict.html',views.adPredict),
+    url(r'^index/thyroidTirads.html', views.thyroidTirads),
     url(r'^index/others.html',views.others),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

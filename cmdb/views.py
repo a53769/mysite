@@ -8,6 +8,7 @@ from cmdb.algorithm.adDisease import model_predict
 import os
 from cmdb.algorithm.config import *
 import cmdb.algorithm.TxtProcess as TP
+from cmdb.algorithm.tirads import *
 
 
 def home(request):
@@ -170,6 +171,29 @@ def adPredict(request):
         }
         return render(request, 'adPredict.html', content)
     return render(request, 'adPredict.html', )
+
+def thyroidTirads(request):
+    if request.method == "POST":
+        file_obj = request.FILES.get('img', None)
+        if file_obj == None:
+            return HttpResponse('file not existing in the request')
+        img = Img(img_url=request.FILES.get('img'), name=request.FILES.get('img').name)
+        img.save()
+
+        tirads = ret_label(img.img_url.path)
+        tiradsDocs = [r"TI-RADS1级：正常甲状腺，无甲状腺结节，建议常规随访。", \
+                      r"TI-RADS2级：良性病变，具有单纯性囊肿、分隔型囊肿、个别钙化、回音型海绵状结节的特点，建议常规随访。", \
+                      r"TI-RADS3级：良性结节可能，呈椭圆形，常规边界，超声显示等回声或强回声，无其他可疑特征，建议短期随访。", \
+                      r"TI-RADS4级：恶性征象：实质性、低回声/极低回声、微钙化、边界模糊/微分叶、纵横比>1。具有一种以上恶性征象，建议穿刺活检或手术，并定期随访", \
+                      r"TI-RADS5级：恶性结节可能，密实，低回声，边界不规则，钙化，形状更高更宽，建议适当处理。"]
+
+        content = {
+            "img": img.img_url.url,
+            "tiradsDoc": tiradsDocs[tirads - 1]
+        }
+        return render(request, "thyroidTirads.html", content)
+
+    return render(request, 'thyroidTirads.html', )
 
 
 def others(request):

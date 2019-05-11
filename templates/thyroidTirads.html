@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content-header">
+        <h1>
+            甲状腺 Ti-RADS 预测
+{#            <small>Optional</small>#}
+        </h1>
+{#        <ol class="breadcrumb">#}
+{#            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>#}
+{#            <li class="active">Main Page</li>#}
+{#        </ol>#}
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- general form elements -->
+        <div class="box box-default">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">输入影像文件</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="thyroidTirads.html" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="box-body">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" name="img"/>
+
+                        <p class="help-block">输出 TI-RADS 预测结果.</p>
+                        {% if img%}
+                            <img src="{{ img }}" height="360" width="560"/>
+                            <div class="box-body">
+                                <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">{{ tiradsDoc }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">上传</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- /.box -->
+
+    </section>
+
+{% endblock %}
